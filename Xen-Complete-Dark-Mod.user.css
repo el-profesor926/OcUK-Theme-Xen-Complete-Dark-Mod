@@ -1,0 +1,1323 @@
+        /* ==UserStyle==
+@name           OcUK-Theme-Xen-Complete-Dark-Mod
+@namespace      https://github.com/el-profesor926/OcUK-Theme-Xen-Complete-Dark-Mod
+@version        1.0.0
+@description    A complete modded dark style theme for ocuk forums
+@author         Sean Mayes
+
+@homepageURL https://github.com/el-profesor926/OcUK-Theme-Xen-Complete-Dark-Mod
+@supportURL https://github.com/el-profesor926/OcUK-Theme-Xen-Complete-Dark-Mod/issues
+@updateURL https://github.com/el-profesor926/OcUK-Theme-Xen-Complete-Dark-Mod/raw/main/Xen-Complete-Dark-Mod.user.css
+==/UserStyle== */
+    @-moz-document url-prefix("https://www.overclockers.co.uk/forums/") {
+        html {
+            background-color: #2e3539 !important;
+        }
+        /*[adjust width below to preferred size]*/
+        body {
+            color: #eee;
+            min-height: 100% !important;
+            background-color: #1e2326 !important;
+            margin-top: 0!important;
+            margin-bottom: 0!important;
+            margin-left: auto!important;
+            margin-right: auto!important;
+            padding: 0px!important;
+            border-bottom: 0px;
+            border-top: 0px;
+            border-style: solid;
+            border-color: #282e31;
+            border-left: 10px solid #373f44 !important;
+            border-right: 10px solid #373f44 !important;
+            width: 1400px;
+            box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2) !important;
+        }
+        .nodeList .categoryStrip {
+            border: 1px solid #373f44 !important;
+        }
+        .sectionMain {
+            border: 1px solid #454f55 !important;
+        }
+        #logo img {
+            margin-left: 20px;
+            filter: grayscale(1);
+        }
+        .navTabs {
+            border: 1px solid #373f44 !important;
+        }
+        #header {
+            background-color: #1e2326 !important;
+        }
+        ::-webkit-scrollbar {
+            max-width: 14px!important;
+            background-color: #24292d !important
+        }
+        ::-webkit-scrollbar-thumb {
+            min-height: 28px !important;
+            background-color: #2e3539 !important
+        }
+        ::-webkit-scrollbar-button {
+            background-color: #2e3539!important
+        }
+        ::-webkit-scrollbar-track,
+        ::-webkit-scrollbar-corner {
+            background-color: #24292d !important
+        }
+        .previewTooltip {
+            border-top: 1px solid #777 !important;
+            border-right: 1px solid #777 !important;
+            border-left: 1px solid #777 !important;
+            border-bottom: 1px solid #777 !important;
+        }
+        /** New bits and bobs dec 2017 **/
+        .quickReply {
+            border-top: 1px solid #5a666d !important;
+        }
+        .redactor_toolbar li.redactor_btn_group ul {
+            border: none;
+        }
+        /** Removes banned banner when a power hungry mod is having a bad day **/
+        .bannedDiv {
+            display: none;
+        }
+        /** End new bits and bobs **/
+        .Menu {
+            background: #2e3539 !important;
+            border: 1px solid #545b6b !important;
+        }
+        .xenOverlay .whoreplied {
+            background-color: #2e3539;
+        }
+        .chooserColumns li a:hover {
+            background-color: #2e3539 !important;
+        }
+        .messageSimpleList.topBorder {
+            border-top: none !important;
+        }
+        .navigationSideBar {
+            background-color: transparent !important;
+        }
+        .forum_list h1 {
+            display: none;
+        }
+        /* Thread options hover color */
+        .Popup .PopupControl:hover,
+        .Popup.PopupContainerControl:hover {
+            background-color: #23282b;
+        }
+        /* I'm fairly sure the answer is no's tweaks */
+        /* removes the replies and views and start date heading as it's not needed */
+        .blockLinksList {
+            margin-top: 8px !important;
+            margin-left: 10px !important;
+        }
+        .sectionHeaders .stats,
+        .sectionHeaders .postDate {
+            display: none !important;
+        }
+        .staffOnline li {
+            display: inline !important;
+            margin-right: 20px;
+        }
+        .staffOnline li + li {
+            margin-left: 20px;
+        }
+        /* Edited text fix */
+        .message .editDate {
+            margin-bottom: 35px !important;
+        }
+        /* makes locked threads alert when in the thread more visible */
+        dd.lockedAlert {
+            color: #ff0000 !important;
+        }
+        /* removes the forum link breadbox when on the main home page of the forum but comes back when in sub forums/threads */
+        .forum_list .breadBoxTop,
+        .forum_list .breadBoxBottom {
+            display: none;
+        }
+        /* moves the post links like edit, trust etc inline with the signature */
+        .signature,
+        .signatureDivider {
+            position: relative;
+            top: 26px;
+        }
+        .messageMeta {
+            position: relative;
+            bottom: 5px !important;
+            right: 0;
+            float: right !important;
+            max-width: 350px;
+        }
+        /* adds padding to the quick reply box */
+        [contenteditable="true"] {
+            padding: 10px !important
+        }
+        .quickReply .messageUserInfo {
+            min-height: 130px !important;
+            padding: 5px;
+        }
+        /* Alternative thread colours from mortals */
+        ol.discussionListItems li.discussionListItem:nth-child(odd) {
+            background-color: #333b40;
+            border-left: 1px solid #373f44;
+            border-right: 1px solid #373f44;
+        }
+        ol.discussionListItems li.discussionListItem:nth-child(even) {
+            background-color: #2e3539;
+            border-left: 1px solid #373f44;
+            border-right: 1px solid #373f44;
+        }
+        .discussionListItem .posterAvatar,
+        .discussionListItem .stats {
+            background-color: inherit;
+            border-left: 1px solid #373f44;
+            border-right: 1px solid #373f44;
+        }
+        /* Uncomment to hide logo and resize header */
+        /*#logoBlock{
+        display:none;
+    }
+    #headerMover #headerProxy{
+        height: 50px;
+        margin-top: 20px !important;
+    }*/
+        /* Move thread text left */
+        .node .nodeText {
+            margin: 10px 270px 10px 40px;
+        }
+        /* Blue name fix */
+        .secondaryContent a {
+            color: #eee;
+        }
+        /* Links in post fix from mortals */
+        .messageText a {
+            text-decoration: underline !important;
+        }
+        /* BBcode editor fix */
+        .xenOverlay .section .bbCodeEditorContainer textarea {
+            background: #2e3539 !important;
+        }
+        textarea.textCtrl:focus {
+            background-image: none;
+        }
+        /* 19th Feb Fixes */
+        #content .pageContent {
+            background-color: #373f44;
+            padding: 10px !important;
+        }
+        .postDate {
+            border-top: none !important;
+            border-bottom: none !important;
+            margin-top: 0px !important;
+        }
+        .pageWidth {
+            margin: 0 5px;
+        }
+        #QuickSearch {
+            top: -24px;
+            right: 10px;
+        }
+        .pageNavLinkGroup {
+            background: #373f44;
+        }
+        .messageList .message {
+            padding: 5px !important;
+        }
+        .messageInfo.primaryContent {
+            margin-left: 5px !important;
+        }
+        .PageNav {
+            font-size: 9px;
+        }
+        .messageNotices li {
+            background: #2e3539;
+            border: none;
+        }
+        .navTabs .navTab.selected.PopupOpen .navLink {
+            background: #2e3539;
+        }
+        #loginBar form {
+            border: none !important;
+        }
+        /* Message padding */
+        .message .messageContent {
+            padding: 10px !important;
+        }
+        /* Fix pagenav arrow */
+        a.PageNavPrev,
+        a.PageNavNext {
+            padding: 0px !important;
+        }
+        /* Remove page description when in forum */
+        #pageDescription {
+            display: none;
+        }
+        /* Members online fix */
+        div.section.staffOnline.avatarList li {
+            display: inline;
+        }
+        .membersOnline .username,
+        .staffOnline .username {
+            border-top: none;
+        }
+        /* Theme search box etc */
+        .textCtrl {
+            font-family: 'Verdana';
+            color: #fff;
+            background: #2e3539;
+            border: 1px solid #434d53 !important;
+        }
+        .textCtrl:focus,
+        .textCtrl.Focus {
+            background: #2e3539;
+            border: 1px solid #434d53 !important;
+        }
+        /* Alert popup */
+        #StackAlerts .stackAlertContent {
+            background: #23282b !important;
+            border: 4px solid #2e3539 !important;
+            color: #fff;
+        }
+        /* Change font of top nav area */
+        .navTabs .navTab.selected .tabLinks a:hover,
+        .navTabs .navTab.selected .tabLinks a:focus,
+        .navTabs .navTab.selected .tabLinks a,
+        .navTabs .navTab.selected .navLink,
+        .navTabs .navLink,
+        .navTabs .SplitCtrl {
+            font-family: verdana;
+        }
+        /* Popup arrow */
+        .xenTooltip .arrow {
+            border-color: #23282b !important;
+        }
+        /* Moves edit date in a little */
+        .message .editDate {
+            margin-right: 20px !important;
+        }
+        /* makes the drop down menus for the reply box grey */
+        .redactor_dropdown {
+            background: #373f44;
+        }
+        .redactor_dropdown a.icon:hover {
+            background-color: #23282b;
+        }
+        /* Member dropdown */
+        ul.autoCompleteList {
+            background-color: #2e3539;
+        }
+        ul.autoCompleteList li:hover,
+        ul.autoCompleteList li.selected {
+            background-color: #23282b;
+        }
+        /* makes the alert pop up grey */
+        #StackAlerts {
+            background: #23282b !important;
+            border: 1px solid #2e3539 !important;
+            color: #fff;
+        }
+        /* makes the draft saved box grey. currently set to be hidden as felt was un-needed */
+        .redactor_box .draftNotice span {
+            background: #2b3236 !important;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            color: #c9c9c9;
+            visibility: hidden;
+        }
+        /* hides your username that's next to the quick reply box */
+        .quickReply.message .messageUserInfo {
+            visibility: hidden;
+        }
+        /* Buttons */
+        #QuickSearch .button {
+            border: 1px solid #23282b !important;
+        }
+        .button {
+            font-size: 8pt;
+            font-family: 'Verdana';
+            color: #fff;
+            background: #2e3539 !important;
+            border: none;
+            box-shadow: 0 2px #23282b;
+            border-radius: 3px !important;
+        }
+        .button:hover,
+        .button[href]:hover,
+        .buttonProxy:hover .button {
+            color: #aaa !important;
+        }
+        a.button {
+            color: #eee !important;
+        }
+        /* Move report and edit to right */
+        .signatureControlsAlignment {
+            float: right !important;
+        }
+        .message .privateControls {
+            float: left;
+            margin-right: -4px;
+        }
+        /* Collapsed forum */
+        .nodeList .CategoryStripCollapsed {
+            background-color: #23282b;
+            border-bottom: none;
+            border-radius: 5px !important;
+        }
+        /* Scottland Tweaks */
+        /* ------------- Discussion Lists ------------- */
+        .arrowWidget {
+            filter: invert(100%);
+        }
+        /* Unread Post */
+        img[src$="styles/default/xenforo/threadIcons/thread_new.gif"] {
+            background: #e971ff !important;
+            width: 0;
+            height: 0;
+            padding: 5px;
+            border-radius: 5px !important;
+            margin-right: 6px !important;
+        }
+        /* Unread Post [Contributed] */
+        img[src$="styles/default/xenforo/threadIcons/thread_dot_new.gif"] {
+            background: #9f4baf !important;
+            width: 0;
+            height: 0;
+            padding: 5px;
+            border-radius: 5px !important;
+            margin-right: 6px !important;
+        }
+        /* Read Post */
+        img[src$="styles/default/xenforo/threadIcons/threadRead.gif"] {
+            background: #616161 !important;
+            width: 0;
+            height: 0;
+            padding: 5px;
+            border-radius: 5px !important;
+            margin-right: 6px !important;
+        }
+        /* Read Post [Contributed] */
+        img[src$="styles/default/xenforo/threadIcons/thread_dot.gif"] {
+            background: #e971ff !important;
+            opacity: 0.5;
+            width: 0;
+            height: 0;
+            padding: 5px;
+            border-radius: 5px !important;
+            margin-right: 6px !important;
+        }
+        /* Toggles */
+        .tglWchild.active,
+        .tglWchild.inactive {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNy0xMi0xMFQyMDoxNDozMloiIHhtcDpNb2RpZnlEYXRlPSIyMDE3LTEyLTEwVDIwOjE2OjIzWiIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNy0xMi0xMFQyMDoxNjoyM1oiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Nzg2NmYxNWMtZTAxZi05NTQwLTg4MmItOTNlOGNkZDU3ZWYwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc4NjZmMTVjLWUwMWYtOTU0MC04ODJiLTkzZThjZGQ1N2VmMCIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjc4NjZmMTVjLWUwMWYtOTU0MC04ODJiLTkzZThjZGQ1N2VmMCI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6Nzg2NmYxNWMtZTAxZi05NTQwLTg4MmItOTNlOGNkZDU3ZWYwIiBzdEV2dDp3aGVuPSIyMDE3LTEyLTEwVDIwOjE0OjMyWiIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7vuI+TAAABTElEQVRIie2UIW7DQBBFn6PiHMPAUlHMaxhgWh5WlitYoYZhYealBoYud1CkgBwjF3CB5zfjai2lcltQdaSV5d2ZP3//zE7U9z1z7AFgs9n4vRTIgQx4tL0T0AI10MmxqqoBwNkLsAWST/tPtp6BPXAYMXDBJbC0LLVlxdjkxq60vYMHSC3z0g72wNmBvwGv5iOWR6BbmENutLtAsOxsZ5355gACyOxbTwR7kNrH6ApSuwW4rHdTtY3ipmh9zGLC8W4TwMnTAqKJ5X1OHkC0JGbQ4qb4EE8x0qBmaJIU2MZNEapEwlC+FCemAFS+kqHOK6Yb6cqtnKNOVHsqSxq4hXoh2MoCOXLnYwKI5j7n2X3wPw/oBBCcB+5VRnFTqAdW3HTqfm0e9Jf1TkxaH/Pj84DAv3y+Zx4IQOJpHiRxU4wyW/DX5oETLOPvzoN3dm2WDMnGUj4AAAAASUVORK5CYII=');
+            filter: grayscale(1);
+        }
+        /* Main forum icons */
+        .node .forumNodeInfo.unread .nodeIcon,
+        .node .categoryForumNodeInfo.unread .nodeIcon {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE3LTEyLTEwVDIwOjE3OjUwWiIgeG1wOk1vZGlmeURhdGU9IjIwMTctMTItMTBUMjA6MTk6MTRaIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE3LTEyLTEwVDIwOjE5OjE0WiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3MjQ3NzM4MS1jNWQwLWMzNGYtYjVlZC03NTUzNmUwZmUxZDQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDUzOTg2RkFGRURCMTFFNjgxOURENDUxOEM5QjA3MDIiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpENTM5ODZGQUZFREIxMUU2ODE5REQ0NTE4QzlCMDcwMiIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ1Mzk4NkY3RkVEQjExRTY4MTlERDQ1MThDOUIwNzAyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ1Mzk4NkY4RkVEQjExRTY4MTlERDQ1MThDOUIwNzAyIi8+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjcyNDc3MzgxLWM1ZDAtYzM0Zi1iNWVkLTc1NTM2ZTBmZTFkNCIgc3RFdnQ6d2hlbj0iMjAxNy0xMi0xMFQyMDoxOToxNFoiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+O95J1QAAAWdJREFUWIXtlyFTwzAUgL9yyHrs7BSWq0J1f2KamTpmUVhwNUXzJ1aF6s2iamvn64vIy+3RK01yV2Ai392ul+Zl/fbyknTJMAxcElf/LTAmCrmIQi6ikIso5OLaNzD5+BzfyoENkAFrudcCDXAAah083N8uK6RYAQWwA9JR3518HoAKKIEu5MtDhVbAM7CVdo3JRiPtDJO1HHgEboCnEKlQoUJkOsyvr4Be9R+BN0z2bOwJ2Ps+IKSoc3kQIvM6krH00ldKeydjFxfaYGqmxmTGRSWxqYxdXCiT64HpzIzpJVaPXVTILu1mNuo7NnY9G6W4uI0xRKiVq3f6VWw7G6UIEbLpt8XtQhez9zSHCNli1st/DrvcdXEvKqSXe4HZiacylUpfIW27/L0I3alLzHGwBV4wGfjp6AB457xB/opQhzmbTpynZGoX7vmjw9VK7THT4P364UsS/7k6iEIuopCLKOQiCrn4AnjmTCfPjk6pAAAAAElFTkSuQmCC');
+            background-repeat: no-repeat;
+            background-position: 0px;
+            margin-left: -3px !important;
+            filter: grayscale(1) brightness(1.5);
+        }
+        .node .forumNodeInfo .nodeIcon,
+        .node .categoryForumNodeInfo .nodeIcon {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkUxQjI5NDVGOTM3MTFFNkI5OUZGMjg2MTczMDUwNzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkUxQjI5NDZGOTM3MTFFNkI5OUZGMjg2MTczMDUwNzIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2RTFCMjk0M0Y5MzcxMUU2Qjk5RkYyODYxNzMwNTA3MiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2RTFCMjk0NEY5MzcxMUU2Qjk5RkYyODYxNzMwNTA3MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv8mKTQAAAFJSURBVHja7JcxboNAEEWx5ZI+rdvcwOIA+BIpqOyGzm5duU06Gqei8CXgACvfgJbWvXvykf5Ko1WIQdpNUDQjfaFlZ+XHZ3YWL7qui+YUy2hmoUAKpEAK9NexGpuYZZl7K4W2UAK98l4DGaiCaplclqVfIBFrKIf2UOzMbagddIEKqA3ikIA5Q28c13TDcJzQtd69A/QCnaZATQXKCdPy6XsXHmL+Bn3SPZt7h44hijrlD0WE+XBgbDw4V3C851rvQFvWTE1nnsWFuTHXegdKeK0GnPnOqcpZ6xXIbm0zYY1x1v7vTt1MtV/kNiGAjFPcz0IWswkBZItZbv+fwm53WdxegeR2z9mJ4wFnDsyR2z9Ipy54HPQd+J0ODB0dfVxFgwwC1PJsuotXkg70oF85XC3Uka9h9OfH2FjoP1cFUiAFUqCZA30JMABcZkwn+Z4VjgAAAABJRU5ErkJggg==');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            margin-left: -3px !important;
+        }
+        /* Remove discussion and post amount */
+        .pairsInline dl,
+        .pairsInline dt,
+        .pairsInline dd {
+            display: none;
+        }
+        .subForumsPopup .dt {
+            margin-left: -5px;
+        }
+        /* Thread options border */
+        .DiscussionListOptions {
+            border: 1px solid #373f44;
+        }
+        /* Orange forum links in new posts */
+        .forumLink {
+            color: #aaa !important;
+        }
+        /* Hide avatars leaves sigs alone */
+        .UserRankImages {
+            display: none;
+        }
+        /* Overlay box, report box */
+        .Touch .xenOverlay .formOverlay {
+            background: #2e3539;
+        }
+        .xenOverlay .formOverlay .heading {
+            background-color: #373f44;
+            border: none !important;
+        }
+        /* Mark Unread threads as bolder and slightly larger */
+        .discussionListItems .unread .title a {
+            font-weight: 400;
+            font-size: 12px;
+        }
+        .discussionListItem .title a:visited {
+            color: #aaa;
+        }
+        /* Closed thread */
+        .thread_view .threadAlerts {
+            border: 1px solid #373f44;
+        }
+        /* Poll */
+        .pollBlock .questionMark {
+            background: #2e3539;
+            color: #e971ff;
+        }
+        .pollBlock .pollOptions,
+        .pollBlock .pollResults {
+            border-top: 1px solid #373f44;
+            border-bottom: 1px solid #373f44;
+        }
+        .pollBlock .pollOption label:hover {
+            background: #282e31;
+        }
+        a.button.PollChangeVote.nonOverlayOnly {
+            background: #282e31;
+            box-shadow: none;
+        }
+        a.button.PollChangeVote.nonOverlayOnly:hover {
+            background: #373f44;
+            color: #e971ff !important;
+        }
+        .pollResult .barContainer {
+            border: 1px solid #373f44;
+        }
+        .pollResult .bar {
+            background: #e971ff;
+        }
+        /* Search box */
+        .formPopup .primaryControls input.textCtrl {
+            margin-bottom: 0;
+            border-radius: 5px !important;
+        }
+        /* Online indicator */
+        div.online .userBanner {
+            border-top: 2px solid #e971ff !important;
+        }
+        .onlineIndicator {
+            display: none !important;
+        }
+        /* Alerts popup width */
+        .navPopup {
+            width: 500px;
+        }
+        .navPopup .listItem:hover {
+            background: #23282b !important;
+        }
+        /* RoyMi6 Fixes */
+        .message .publicControls .MultiQuoteControl.active {
+            background-color: #676767;
+        }
+        .bbCodeBlock {
+            margin: 0 1em 1em 1em !important;
+        }
+        .section.primaryUserBlock {
+            background-color: #2e3539;
+        }
+        .navTabs .navTab.selected .tabLinks a:hover,
+        .navTabs .navTab.selected .tabLinks a:focus {
+            padding: 1px 10px !important;
+        }
+        .postDate {
+            padding-bottom: 2px;
+            padding-top: 1px;
+            border-right-color: #373f44 !important;
+            border-left-color: #373f44!important
+        }
+        /*Remove underlines on titles */
+        .title a,
+        .title,
+        .username,
+        .nodeTitle {
+            text-decoration: none !important;
+        }
+        /*fix colours for tooltips on hover in top level of forum*/
+        .xenTooltip {
+            background-color: #23282b !important;
+        }
+        .nodeDescriptionTip .arrow {
+            border-right-color: #23282b !important;
+        }
+        /* Clean up the tooltips on hover in subforum*/
+        .xenPreviewTooltip {
+            border: 0px !important;
+        }
+        .previewTooltip .posterDate {
+            border-top-color: #23282b !important
+        }
+        .xenPreviewTooltip .arrow span {
+            border-top-color: #373f44 !important;
+        }
+        .primaryContent {
+            border-bottom: 0px;
+        }
+        /*Hover effect for editor icons*/
+        .redactor_toolbar li a:hover {
+            background-color: #EEE;
+        }
+        /*profile page tabs*/
+        .profilePage .tabs.mainTabs {
+            background-color: #2e3539 !important;
+        }
+        .profilePage .tabs.mainTabs li.active a {
+            background-color: #373f44 !important;
+        }
+        .profilePage .tabs.mainTabs li a:hover {
+            background-color: #495358 !important;
+        }
+        .textWithCount.subHeading .count {
+            border: 1px solid #ffffff !important;
+            background-color: #373f44 !important;
+        }
+        .userInformation {
+            background: #2e3539 !important;
+        }
+        .profilePage .primaryUserBlock .lastActivity {
+            border-top-color: #373f44 !important;
+        }
+        .profilePage .mast .section.infoBlock {
+            border: 0px !important;
+        }
+        .profilePage .primaryUserBlock {
+            border: 0px !important;
+        }
+        .profilePage .mainProfileColumn {
+            border-left-color: #373f44 !important;
+        }
+        .profilePage .mast {
+            border-right-color: #373f44 !important;
+        }
+        /* Jump List */
+        #jumpMenu .blockLinksList ul,
+        #jumpMenu .nodeList li.d0 {
+            border-top: 1px solid #373f44;
+        }
+        .xenOverlay #jumpMenu .nodeList {
+            border-left: 1px solid #373f44;
+        }
+        .blockLinksList a:active,
+        .blockLinksList li.kbSelect a:active,
+        .blockLinksList a.selected,
+        .blockLinksList li.kbSelect a.selected,
+        .blockLinksList label:active,
+        .blockLinksList li.kbSelect label:active,
+        .blockLinksList label.selected,
+        .blockLinksList li.kbSelect label.selected {
+            color: #eee;
+            background-color: #222;
+        }
+        /* Blue postdate on hover fix */
+        .discussionList .sectionHeaders dd a[href]:hover {
+            background-color: #23282b !important;
+        }
+        /* Notice/cookie box */
+        .PanelScroller .scrollContainer,
+        .PanelScrollerOff .panel {
+            display: none !important;
+        }
+        /* Login Bar */
+        #loginBar {
+            background-color: #e971ff;
+            border-bottom: none;
+        }
+        #loginBar #loginBarHandle {
+            background-color: #e971ff;
+            box-shadow: none !important;
+        }
+        /* Smaller title font in Thread */
+        .titleBar h1 {
+            font-size: 11pt;
+        }
+        .messageList {
+            border: none !important;
+        }
+        /* Body font colour */
+        body .muted,
+        body a.muted,
+        body .muted a {
+            color: #aaa;
+        }
+        #DiscussionListOptionsHandle a {
+            background-color: rgb(35, 41, 45);
+            border: none;
+            border-radius: 5px !important;
+        }
+        /* Remove free shipping url */
+        #Offer .freeShipping {
+            display: none !important;
+        }
+        .blockLinksList a:hover,
+        .blockLinksList a:focus,
+        .blockLinksList li.kbSelect a,
+        .blockLinksList label:hover,
+        .blockLinksList label:focus,
+        .blockLinksList li.kbSelect label {
+            text-decoration: none;
+            background-color: #23282b;
+        }
+        .formPopup .controlsWrapper {
+            background: #2e3539;
+        }
+        .PageNav a:hover,
+        .PageNav a:focus,
+        .PageNav a.currentPage {
+            background-color: #2e3539 !important;
+            border-color: transparent;
+            color: #e971ff !important;
+            border-radius: 3px !important;
+        }
+        .Popup .PopupControl:hover,
+        .Popup.PopupContainerControl:hover {
+            background-color: #23282b !important;
+        }
+        .navigationSideBar a:hover {
+            background: #2e3539 !important;
+            color: #e971ff !important;
+            text-decoration: none;
+        }
+        .redactor_box .redactor_smilies .secondaryContent {
+            border-top: 2px solid rgb(78, 84, 90);
+        }
+        .discussionList .sectionHeaders a span:hover {
+            background-color: #23282b !important;
+        }
+        .Menu .sectionFooter {
+            background-color: #373f44;
+        }
+        .heading,
+        .xenForm .formHeader {
+            background-color: #2e3539;
+            border-bottom: 1px solid #2e3539;
+        }
+        .tabs {
+            background: #2e3539;
+        }
+        .subHeading {
+            background-color: #2e3539;
+            border-top: 1px solid #2e3539;
+            border-bottom: 1px solid #aaa;
+        }
+        .xenForm {
+            border: 1px solid #434d53 !important;
+        }
+        .xenForm fieldset,
+        .xenForm .formGroup {
+            border-top: 1px solid #434d53;
+        }
+        .quickReply.message .messageUserInfo {
+            box-shadow: none;
+            background-color: #2e3539;
+        }
+        .hasJs .bbCodeSpoilerText {
+            background-color: #2e3539;
+            border: none;
+        }
+        /* Remove share section */
+        .sharePage {
+            display: none;
+        }
+        /* Taglist */
+        .tagList .tag {
+            background: #2e3539 !important;
+            border: none;
+        }
+        /* Remove taglist arrows */
+        .tagList .tag .arrow,
+        .tagList .tag::after {
+            display: none !important;
+        }
+        .Menu {
+            font-size: 11px;
+            border: 1px solid rgb(255, 255, 255);
+            border-top: 1px solid #fff;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+        .Menu .primaryContent {
+            background-color: #373f44;
+        }
+        .Menu .secondaryContent {
+            background-color: #2e3539;
+        }
+        /* Hide Facebook icon */
+        i.fa.fa-facebook-square {
+            display: none;
+        }
+        /* Hide Advert */
+        #Offer img {
+            display: none !important;
+        }
+        .messageUserBlock .extraUserInfo {
+            background-color: #2e3539;
+        }
+        .userBanner {
+            font-size: 11px;
+            background-color: #373f44 !important;
+        }
+        .bbCodeBlock pre,
+        .bbCodeBlock .code {
+            background-color: #2e3539;
+        }
+        .bbCodeBlock .type {
+            background-color: #2e3539;
+            border-bottom: 1px solid #373f44;
+        }
+        /* Trust, Quote, Multi */
+        .publicControls a {
+            background-color: #2e3539;
+            border: none;
+            border-bottom: 1px solid #373f44;
+            border-radius: 5px !important;
+        }
+        .publicControls a:hover {
+            background-color: #23282b;
+            border: none;
+            border-bottom: 1px solid #373f44;
+            border-radius: 5px !important;
+        }
+        /* Report, edit */
+        .privateControls a {
+            background-color: #2e3539;
+            border: none;
+            border-bottom: 1px solid #373f44;
+            border-radius: 5px !important;
+        }
+        .privateControls a:hover {
+            background-color: #23282b;
+            border: none;
+            border-bottom: 1px solid #373f44;
+            border-radius: 5px !important;
+        }
+        .privateControls a,
+        .privateControls a:hover,
+        .publicControls a,
+        .publicControls a:hover {
+            background-color: #2e3539;
+            border: none;
+            border-radius: 3px !important;
+            box-shadow: 0 2px #23282b;
+            padding: 5px 7px;
+            line-height: 1.0em;
+        }
+        .privateControls a:hover,
+        .publicControls a:hover {
+            background-color: #23282b;
+            text-decoration: none;
+        }
+        /* Quote box */
+        .bbCodeQuote .quoteContainer {
+            background-color: #2e3539;
+            border: none;
+            border-bottom-left-radius: 5px !important;
+            border-bottom-right-radius: 5px !important;
+            border-top-right-radius: 5px !important;
+        }
+        .bbCodeQuote .attribution {
+            color: rgb(255, 255, 255);
+            background-color: #23282b;
+            border: none;
+            border-bottom: 1px dotted #373f44;
+            border-top-left-radius: 5px !important;
+            border-top-right-radius: 5px !important;
+            width: -moz-max-content;
+            width: -webkit-max-content;
+            width: max-content;
+        }
+        /* Remove quote box arrow - Firefox users may want to uncomment this */
+        /*a[class="AttributionLink"] {
+        display: none;
+    }*/
+        .bbCodeBlock {
+            border: 1px solid #373f44;
+        }
+        /* Forum logo */
+        img[src$="styles/default/xenforo/vbSmilies/used/header.jpeg"] {
+            opacity: 0.7 !important;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            padding: 90px 250px 20px 100px;
+            margin-top: 10px;
+            margin-left: 30px;
+            float: left;
+        }
+        .primaryContent {
+            background-color: #373f44;
+            border-bottom: 1px solid #434d53;
+        }
+        .messageList .message {
+            background-color: #2e3539;
+            border: 1px solid #434d53;
+        }
+        .postDate {
+            background-color: #23282b;
+        }
+        .PageNav a {
+            background-color: #23282b;
+            border: 0px solid #23282b;
+            border-radius: 3px !important;
+        }
+        .nodeList .categoryStrip {
+            background-color: #23282b;
+            border-top: none;
+            border-bottom: none;
+            border-radius: 5px !important;
+        }
+        .node .nodeDescription {
+            font-size: 10px;
+            font-family: verdana;
+        }
+        .node .nodeLastPost {
+            background-color: #2e3539;
+            border: none;
+        }
+        .discussionListItem .posterAvatar,
+        .discussionListItem .stats {
+            background-color: #23282b;
+        }
+        .secondaryContent {
+            background-color: #2e3539;
+            border-bottom: none;
+            border-radius: 5px !important;
+        }
+        .sidebar .section {
+            border: none;
+        }
+        .sidebar .section .primaryContent h3,
+        .sidebar .section .secondaryContent h3,
+        .profilePage .mast .section.infoBlock h3 {
+            border-bottom: none !important;
+        }
+        .threadListItem {
+            border-top: 1px solid #373f44 !important;
+        }
+        .profilePostListItem {
+            border-top: 1px solid #373f44;
+        }
+        /* Page footer */
+        .footer .pageContent {
+            background-color: #373f44;
+            border-bottom-left-radius: 5px !important;
+            border-bottom-right-radius: 5px !important;
+        }
+        /* Navigation tabs section */
+        .navTabs {
+            font-size: 11px;
+            background-color: #23282b;
+            border: none;
+            border-bottom: none;
+            border-top-left-radius: 5px !important;
+            border-top-right-radius: 5px !important;
+        }
+        .navTabs .navTab.selected .tabLinks,
+        .navTabs .navTab.selected .navLink {
+            background: #373f44;
+            border: none !important;
+            margin-top: 0px !important;
+        }
+        .navTabs .navTab.selected .tabLinks a {
+            text-shadow: none;
+        }
+        .navTabs .navTab.selected .tabLinks a:hover,
+        .navTabs .navTab.selected .tabLinks a:focus {
+            color: #e971ff !important;
+            background-color: transparent;
+            border: none;
+            text-shadow: none;
+        }
+        .navTabs .navTab.PopupClosed:hover,
+        .Popup .PopupControl.PopupOpen,
+        .Popup.PopupContainerControl.PopupOpen {
+            background: #2e3539
+        }
+        .navPopup .listItem {
+            border-bottom: none;
+        }
+        .discussionListItem {
+            background-color: #2e3539;
+            border-bottom: 1px solid #373f44;
+            border-top: 1px solid #373f44 !important;
+        }
+        /* Quick reply toolbar */
+        .redactor_toolbar {
+            font-size: 0;
+            background-color: #eee !important;
+            border-bottom: none;
+        }
+        .quickReply {
+            padding-top: 10px;
+            padding-bottom: 30px;
+            border-top: 1px solid #aaa;
+        }
+        .discussionListItem .stats dl {
+            border-left: none;
+            border-right: none;
+        }
+        /* New thread button */
+        a.callToAction span {
+            color: rgb(255, 255, 255);
+            background: #333 !important;
+        }
+        a.callToAction span:hover {
+            color: rgb(255, 255, 255);
+            background: #444 !important;
+            opacity: 0.7 !important;
+        }
+        a.callToAction {
+            background: #333 !important;
+            border: none;
+            box-shadow: 0 2px #23282b;
+            border-radius: 3px !important;
+        }
+        a.callToAction:hover span {
+            background: #444 !important;
+            border: none;
+            box-shadow: none;
+        }
+        /* Remove NEW from posts */
+        .message .newIndicator {
+            display: none !important;
+        }
+        .messageUserInfo {
+            border: none !important;
+            box-shadow: none !important;
+        }
+        .messageInfo.primaryContent {
+            border: none !important;
+            border-radius: 5px !important;
+        }
+        body .itemPageNav a:hover {
+            background-color: #23282b !important;
+            border-color: transparent;
+            color: #e971ff !important;
+        }
+        body .itemPageNav a {
+            background: #23282b;
+            border: 1px solid #23282b;
+            border-radius: 3px !important;
+        }
+        .sectionFooter {
+            background-color: #2e3539;
+            border-bottom: none;
+        }
+        .textHeading,
+        .xenForm .sectionHeader {
+            border-top: 1px solid #aaa;
+        }
+        .nodeList .categoryForumNodeInfo,
+        .nodeList .forumNodeInfo,
+        .nodeList .pageNodeInfo,
+        .nodeList .linkNodeInfo {
+            background-color: #2e3539;
+            border-bottom: 1px solid #373f44;
+        }
+        .sectionMain {
+            background-color: #2e3539;
+            border: none;
+            border-radius: 5px !important;
+        }
+        .tabs li a,
+        .tabs.noLinks li {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            background: #2e3539;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #fff;
+        }
+        .tabs li.active a,
+        .tabs.noLinks li.active {
+            color: #e971ff !important;
+            background-color: #23282b;
+        }
+        .messageList .newMessagesNotice {
+            border: 1px solid #434d53;
+            background: #23282b;
+            font-size: 11px;
+        }
+        #QuickSearch,
+        .formPopup {
+            background-color: #373f44;
+        }
+        .discussionList .sectionHeaders {
+            color: rgb(255, 255, 255);
+            background-color: #23282b;
+            border-top: none;
+            border-bottom: none;
+            border-top-left-radius: 5px !important;
+            border-top-right-radius: 5px !important;
+        }
+        /* Jump List icon */
+        .breadcrumb .jumpMenuTrigger {
+            background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAA5CAYAAABzlmQiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNy0xMi0xMFQyMDoyODo0N1oiIHhtcDpNb2RpZnlEYXRlPSIyMDE3LTEyLTEwVDIwOjMwOjI1WiIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNy0xMi0xMFQyMDozMDoyNVoiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6YWJiYjdjNTAtOWIzOS1lMDRmLWE2NTQtNzJjZDUzMjZk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') no-repeat 0 0;
+            filter: grayscale(1);
+            /*display: none;*/
+        }
+        /* Breadcrumb tweaks */
+        .breadcrumb .crust:hover .arrow span {
+            border: 12px solid transparent;
+            border-right: 1px none black;
+            border-left-color: #2e3539;
+            -moz-border-right-colors: #2e3539;
+        }
+        .breadcrumb .crust .arrow span {
+            border: 12px solid transparent;
+            border-right: 1px none black;
+            border-left-color: #23282b;
+            -moz-border-right-colors: #23282b;
+        }
+        .breadcrumb .crust a.crumb {
+            background-color: #23282b;
+        }
+        .breadcrumb .crust:hover a.crumb {
+            background-color: #2e3539;
+        }
+        .breadcrumb {
+            font-size: 11px;
+            background-color: transparent;
+            border: none;
+            border-radius: 5px !important;
+        }
+        .breadcrumb .crust .arrow {
+            border-left-color: #373f44;
+        }
+        /* Content box colour */
+        #content .pageContent {
+            background-color: #373f44;
+        }
+        /* Forum list urls */
+        .nodeDescription font {
+            color: #e7b0f1 !important;
+        }
+        a[href]:hover {
+            color: #e971ff !important;
+            text-decoration: underline;
+        }
+        /* Search background fix */
+        .formPopup .primaryControls {
+            background-color: transparent !important;
+        }
+        /* Breadcrumb bottom border fix */
+        .breadcrumb .crust a.crumb {
+            border-bottom: none !important;
+        }
+        /* Attached files fix */
+        .attachedFiles .attachedFilesHeader {
+            background-color: #2e3539;
+            border-bottom: 1px solid #545b6b;
+        }
+        .attachedFiles .attachmentList {
+            background: #23282b;
+        }
+        .attachment .boxModelFixer {
+            background-color: #2e3539;
+            border: 1px solid #545b6b;
+        }
+        .attachedFiles {
+            border: none;
+        }
+        .discussionListItem .noteRow {
+            background-color: #1e2225;
+        }
+        .nodeList .CategoryStripCollapsed {
+            border-top: 1px solid #e971ff;
+        }
+        .showOnlyOP {
+            font-size: 0px;
+            margin-top: 2px;
+            transition: all 0.8s ease-in-out;
+        }
+        .showOnlyOP:hover {
+            font-size: 11px;
+            transition: all 0.8s ease-in-out;
+        }
+        .PanelScroller .navControls a {
+            display: none !important;
+        }
+        .deleted .primaryContent {
+            background-color: #343b40 !important;
+        }
+        #header {
+            background-color: #2e3539;
+        }
+        .navTabs .navTab.selected .tabLinks,
+        .navTabs .navTab.selected .navLink {
+            background: #373f44 !important;
+        }
+        #loginBar {
+            background-color: #23282b;
+        }
+        #loginBar #loginBarHandle {
+            background-color: #23282b;
+            box-shadow: none !important;
+        }
+        .navTabs .navLink,
+        .navTabs .SplitCtrl {
+            background-color: #23282b;
+        }
+        .breadBoxTop,
+        .breadBoxBottom,
+        .PageNav {
+            background-color: #373f44 !important;
+        }
+        .redactor_toolbar,
+        .redactor_toolbar li.redactor_btn_group ul {
+            background-color: #23282b !important;
+        }
+        .redactor_toolbar li.redactor_btn_group ul {
+            background-color: #23282b !important;
+        }
+        html .redactor_toolbar li a,
+        html .redactor_toolbar li a:hover,
+        html .redactor_toolbar li a:active,
+        html .redactor_toolbar li a.redactor_act {
+            filter: invert(1);
+        }
+        #logo img {
+            max-width: 200px;
+        }
+        .nodeDescription font {
+            color: #999 !important;
+        }
+        .sectionMain {
+            border-radius: 15px !important;
+        }
+        .navTabs {
+            border-top-left-radius: 15px !important;
+            border-top-right-radius: 15px !important;
+        }
+        .nodeList .categoryStrip {
+            border-radius: 10px !important;
+        }
+        .sidebar {
+            margin-top: 5px;
+        }
+        .secondaryContent {
+            border-radius: 15px !important;
+            margin-top: 5px;
+        }
+        .navTabs .navTab.selected .tabLinks,
+        .navTabs .navTab.selected .navLink {
+            padding-bottom: 5px;
+        }
+        .messageInfo.primaryContent {
+            border-radius: 15px !important;
+        }
+        .messageList .message {
+            border-radius: 15px !important;
+        }
+        .postDate {
+            margin-top: 10px !important;
+            border-top-left-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+            padding: 5px;
+            margin-bottom: -14px;
+            padding-bottom: 18px;
+            border: none !important;
+        }
+        .messageList .message {
+            border: 5px solid #23282b;
+        }
+        .breadcrumb {
+            background-color: #2e3539;
+            border-radius: 10px !important;
+        }
+        .postDate a.datePermalink {
+            font-size: 10px;
+        }
+        a.callToAction span {
+            background: #1c1f26 !important;
+        }
+        .ugc a:link,
+        .ugc a:visited {
+            display: none;
+        }
+        .bbCodeQuote .quoteContainer {
+            border-bottom-left-radius: 10px !important;
+            border-bottom-right-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+        }
+        .bbCodeQuote .attribution {
+            border-top-left-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+        }
+        .blendedEditor .redactor_box .redactor_toolbar {
+            border-top-left-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+        }
+        .redactor_box {
+            border-bottom-left-radius: 10px !important;
+            border-bottom-right-radius: 10px !important;
+        }
+        .privateControls a,
+        .privateControls a:hover,
+        .publicControls a,
+        .publicControls a:hover {
+            border-radius: 5px !important;
+        }
+        a.callToAction {
+            border-radius: 5px !important;
+        }
+        a.callToAction span {
+            border-radius: 5px !important;
+        }
+        .titleBar {
+            text-align: center;
+        }
+        #QuickSearch.active {
+            border-radius: 10px !important;
+        }
+        .formPopup .primaryControls input.textCtrl {
+            border-radius: 8px !important;
+            padding-left: 5px;
+        }
+        #AccountMenu {
+            border-radius: 10px !important;
+        }
+        .Menu {
+            border-radius: 10px !important;
+        }
+        li.primaryContent:nth-child(2n + 1) {
+            background-color: #1e2326 !important;
+        }
+        li.primaryContent:nth-child(2n) {
+            background-color: #2e3539 !important;
+        }
+        .xenOverlay #jumpMenu .jumpMenuColumn {
+            background: #2e3539;
+        }
+        .xenOverlay .section .sectionFooter,
+        .xenOverlay .sectionMain .sectionFooter {
+            border-bottom-left-radius: 10px !important;
+            border-bottom-right-radius: 10px !important;
+        }
+        .xenOverlay .section .heading,
+        .xenOverlay .sectionMain .heading {
+            border-top-left-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+        }
+        img[src$="styles/default/xenforo/threadIcons/thread_new.gif"] {
+            background: #fff !important;
+        }
+        .xenOverlay .section,
+        .xenOverlay .sectionMain {
+            background: #2e3539;
+            border-radius: 10px !important;
+        }
+        #QuickReply {
+            margin-right: 160px;
+        }
+        .Popup .PopupControl.PopupOpen,
+        .Popup.PopupContainerControl.PopupOpen {
+            color: #e971ff;
+        }
+}
