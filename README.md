@@ -7,7 +7,7 @@
 		<img alt="MIT Licence" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 	<a href="https://github.com/el-profesor926/OcUK-Theme-Xen-Complete-Mod/">
 		<img alt="Install directly with stylus" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
-	<a href="https://github.com/el-profesor926/OcUK-Theme-Xen-Complete-Mod/raw/main/Xen-Complete-Dark.user.css"><img
+	<a href="https://github.com/el-profesor926/OcUK-Theme-Xen-Complete-Mod/raw/main/Xen-Complete-Mod.user.css"><img
 		alt="install directly with stylus"
 		src="https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg"></a>
 </p>
