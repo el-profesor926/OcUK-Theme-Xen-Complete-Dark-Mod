@@ -1237,10 +1237,6 @@
         a.callToAction span {
             background: #1c1f26 !important;
         }
-        .ugc a:link,
-        .ugc a:visited {
-            display: none;
-        }
         .bbCodeQuote .quoteContainer {
             border-bottom-left-radius: 10px !important;
             border-bottom-right-radius: 10px !important;
@@ -1315,9 +1311,5 @@
         }
         #QuickReply {
             margin-right: 160px;
-        }
-        .Popup .PopupControl.PopupOpen,
-        .Popup.PopupContainerControl.PopupOpen {
-            color: #e971ff;
         }
 }
