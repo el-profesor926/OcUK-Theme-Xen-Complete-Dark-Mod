@@ -1312,4 +1312,15 @@
         #QuickReply {
             margin-right: 160px;
         }
+        .Popup .PopupControl.PopupOpen,
+        .Popup.PopupContainerControl.PopupOpen {
+            color: #e971ff;
+        }
+        .bbCodeQuote .quoteContainer {
+            border-radius: 10px !important;
+        }
+        .bbCodeQuote .attribution {
+            width: auto !important;
+            padding-bottom: 12px;
+            margin-bottom: -8px;
 }
