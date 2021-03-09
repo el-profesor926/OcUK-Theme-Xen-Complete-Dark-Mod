@@ -28,10 +28,12 @@
             border-top: 0px;
             border-style: solid;
             border-color: #282e31;
-            border-left: 10px solid #373f44 !important;
-            border-right: 10px solid #373f44 !important;
             max-width: 1400px;
-            box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2) !important;
+        }
+        #headerMover,
+        footer {
+            border-left: 10px solid #373f44;
+            border-right: 10px solid #373f44;
         }
         .nodeList .categoryStrip {
             border: 1px solid #373f44 !important;
