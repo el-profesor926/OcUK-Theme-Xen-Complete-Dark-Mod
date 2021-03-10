@@ -1351,4 +1351,7 @@
         .itemPageNav a {
             font-size: 10px !important;
         }
+        .PageNav .pageNavHeader {
+            padding: 3px 0;
+        }
 }
